@@ -1,6 +1,6 @@
 import Router from 'koa-router';
-import indexController from '../controller/html/index';
-import signController from '../controller/html/signin';
+import indexController from '../src/controller/html/index';
+import signController from '../src/controller/html/signin';
 
 const router = new Router();
 
