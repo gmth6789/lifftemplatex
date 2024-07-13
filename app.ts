@@ -12,7 +12,7 @@ const app = new Koa();
 app.use(koaBody());
 
 
-app.use(koaViews(path.join(__dirname, './views'), {
+app.use(koaViews(path.join(__dirname, '/../views'), {
   extension: 'ejs',
 }));
 
@@ -20,7 +20,7 @@ app.use(koaViews(path.join(__dirname, './views'), {
 app.use(koaLogger())
 
 // 静态资源服务
-app.use(koaStatic(path.join(__dirname, './public'), {
+app.use(koaStatic(path.join(__dirname, '../public'), {
   maxAge: 30 * 24 * 60 * 60 * 1000, // 一个月
 }));
 

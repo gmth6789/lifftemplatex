@@ -1,6 +1,6 @@
 import Router from 'koa-router';
-import userController from '../src/controller/api/user';
-import signController from '../src/controller/api/signin';
+import userController from '/../src/controller/api/user';
+import signController from '/../src/controller/api/signin';
 
 const router = new Router();
 
